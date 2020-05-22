@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     {
         if (health == 0)
         {
-            winLoseBG.color = Color.red;
+            winLoseBG.color = new Color32(129, 5, 7, 200);
             winLoseBG.gameObject.SetActive(true);
             winLoseText.color = Color.white;
             winLoseText.text = "Game Over!";
@@ -58,9 +58,9 @@ public class PlayerController : MonoBehaviour
         
         if (other.tag == "Goal")
         {
-            winLoseBG.color = Color.green;
+            winLoseBG.color = new Color32(4, 86, 79, 200);
             winLoseBG.gameObject.SetActive(true);
-            winLoseText.color = Color.black;
+            winLoseText.color = Color.white;
             winLoseText.text = "You win!";
             StartCoroutine(LoadScene(3));
         }
