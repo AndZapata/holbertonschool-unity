@@ -60,3 +60,8 @@ crashlytics-build.properties
 
 0x04-unity_publishing/Temp/UnityLockfile
 0x04-unity_publishing/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+0x05-unity-assets_models_textures/Temp/UnityLockfile
+*.cache
+0x04-unity_publishing/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+0x04-unity_publishing/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+*.cache
