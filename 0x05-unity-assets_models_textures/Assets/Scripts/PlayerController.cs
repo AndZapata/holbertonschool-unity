@@ -3,9 +3,9 @@
 public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
-    public float jump = 2.5f;
+    public float jump = 2.7f;
     public float speed = 12f;
-    public float gravity = -10f * 2;
+    public float gravity = -20f;
     Transform playerPosition;
     Vector3 vel;
 
@@ -27,8 +27,6 @@ public class PlayerController : MonoBehaviour
         vel.y += gravity * Time.deltaTime;
         controller.Move(vel * Time.deltaTime);
         if (playerPosition.position.y < -30f)
-        {
             playerPosition.position = new Vector3(0, 50, 0);
-        }
     }
 }
