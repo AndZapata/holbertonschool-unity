@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7311119382444728094}
   - component: {fileID: 7311119382444728095}
   - component: {fileID: 143451655757705518}
-  - component: {fileID: 114641285034151406}
+  - component: {fileID: 114127131531406714}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -97,7 +97,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114641285034151406
+--- !u!114 &114127131531406714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,5 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a31012805b86e34e950d1a3b013a776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
-  rb: {fileID: 0}
+  controller: {fileID: 0}
+  jump: 2.5
+  speed: 12
+  gravity: -20
