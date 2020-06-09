@@ -20,3 +20,7 @@
 | 13. What's left of the flag | Download this flag model. Place it in the Models directory. Add Flag to your scene and make it a child of the WinFlag GameObject. The pole of the flag should be positioned inside WinFlag‘s collider. Resize or reposition the collider if necessary |
 | 14. (Sea)horse race | Place it in a new directory called Textures |
 | 15. Under development | Create three builds of Level01 in a directory called Builds |
+
+### Credits
+
+[Skyboxes: Farland Skies - Cloudy Crown](https://assetstore.unity.com/packages/2d/textures-materials/sky/farland-skies-cloudy-crown-60004)
