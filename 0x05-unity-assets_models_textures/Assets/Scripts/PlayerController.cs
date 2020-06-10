@@ -3,7 +3,7 @@
 public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
-    public float jump = 2.7f;
+    public float jump = 1.8f;
     public float speed = 12f;
     public float gravity = -20f;
     Transform playerPosition;

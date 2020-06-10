@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7311119382444728094}
   - component: {fileID: 7311119382444728095}
   - component: {fileID: 143451655757705518}
-  - component: {fileID: 114721454111865532}
   - component: {fileID: 114885424095783162}
+  - component: {fileID: 114339028351963432}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -98,22 +98,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114721454111865532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7311119382444728089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a31012805b86e34e950d1a3b013a776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  jump: 2.7
-  speed: 12
-  gravity: -20
 --- !u!114 &114885424095783162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,3 +110,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28879e934b6737443b262fe02332c9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TimerText: {fileID: 0}
+  milliSeconds: 0
+  seconds: 0
+  minutes: 0
+  intTimer: 0
+--- !u!114 &114339028351963432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7311119382444728089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a31012805b86e34e950d1a3b013a776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  jump: 1.8
+  speed: 12
+  gravity: -20
