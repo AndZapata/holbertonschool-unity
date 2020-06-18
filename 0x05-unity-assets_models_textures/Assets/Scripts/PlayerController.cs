@@ -7,12 +7,14 @@ public class PlayerController : MonoBehaviour
     public float speed = 12f;
     public float gravity = -20f;
     Transform playerPosition;
+    Transform mainCamera;
     Vector3 vel;
 
 
     void Start()
     {
         playerPosition = GetComponent<Transform>();
+        mainCamera = Camera.main.transform;
     }
     public void Update()
     {
@@ -22,7 +24,13 @@ public class PlayerController : MonoBehaviour
             vel.y = -2f;
         if (controller.isGrounded && Input.GetButtonDown("Jump"))
             vel.y = Mathf.Sqrt(jump * -2f * gravity);
-        Vector3 direction = (transform.right * horizontal) + (transform.forward * vertical);
+        Vector3 CamForward = mainCamera.forward;
+        Vector3 CamRight = mainCamera.right;
+        CamForward.y = 0;
+        CamRight.y = 0;
+        CamForward = CamForward.normalized;
+        CamRight = CamRight.normalized;
+        Vector3 direction = (CamRight * horizontal) + (CamForward * vertical);
         controller.Move(direction * speed * Time.deltaTime);
         vel.y += gravity * Time.deltaTime;
         controller.Move(vel * Time.deltaTime);

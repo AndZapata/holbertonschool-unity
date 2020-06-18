@@ -7,6 +7,7 @@ public class CameraController : MonoBehaviour
     public bool rotateAroundPlayer = true;
     public float rotationSpeed = 5f;
     public float Smoothfactor = 1f;
+    Quaternion camTurnAngle;
 
     void Start()
     {
@@ -17,8 +18,9 @@ public class CameraController : MonoBehaviour
     {
         if (rotateAroundPlayer)
         {
-            Quaternion camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * rotationSpeed, Vector3.up);
-            cameraOffset = camTurnAngle * cameraOffset;
+          if (Input.GetMouseButton(1))
+            camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * rotationSpeed, Vector3.up);
+          cameraOffset = camTurnAngle * cameraOffset;
         }
         Vector3 newPos = playerTransform.position + cameraOffset;
         transform.position = Vector3.Slerp(transform.position, newPos, Smoothfactor);
