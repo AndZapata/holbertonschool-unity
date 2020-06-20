@@ -2,29 +2,25 @@
 
 public class CameraController : MonoBehaviour
 {
-    private Vector3 cameraOffset;
-    public Transform playerTransform;
-    public bool rotateAroundPlayer = true;
-    public float rotationSpeed = 5f;
-    public float Smoothfactor = 1f;
-    Quaternion camTurnAngle;
+  private Vector3 cameraOffset;
+  public Transform playerTransform;
+  public float rotationSpeed = 5f;
+  Quaternion camTurnAngle;
 
-    void Start()
-    {
-        cameraOffset = transform.position - playerTransform.position;
-    }
+  void Start()
+  {
+    cameraOffset = transform.position - playerTransform.position;
+  }
 
-    void LateUpdate()
+  void LateUpdate()
+  {
+    if (Input.GetMouseButton(1))
     {
-        if (rotateAroundPlayer)
-        {
-          if (Input.GetMouseButton(1))
-            camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * rotationSpeed, Vector3.up);
-          cameraOffset = camTurnAngle * cameraOffset;
-        }
-        Vector3 newPos = playerTransform.position + cameraOffset;
-        transform.position = Vector3.Slerp(transform.position, newPos, Smoothfactor);
-        if (rotateAroundPlayer)
-            transform.LookAt(playerTransform);
+      camTurnAngle = Quaternion.Euler(Input.GetAxis("Mouse Y") * rotationSpeed, Input.GetAxis("Mouse X") * rotationSpeed, 0);
     }
+    cameraOffset = camTurnAngle * cameraOffset;
+    Vector3 newPos = playerTransform.position + cameraOffset;
+    transform.position = newPos;
+    transform.LookAt(playerTransform);
+  }
 }

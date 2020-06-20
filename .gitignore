@@ -58,10 +58,11 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-0x04-unity_publishing/Temp/UnityLockfile
+0x04-unity_publishing/Temp/*
 0x04-unity_publishing/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
-0x05-unity-assets_models_textures/Temp/UnityLockfile
+0x05-unity-assets_models_textures/Temp/*
 *.cache
 0x04-unity_publishing/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
 0x04-unity_publishing/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
 *.cache
+0x06-unity-assets_ui/Temp/*
