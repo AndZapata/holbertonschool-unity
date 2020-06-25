@@ -56606,7 +56606,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1723345870}
-  rotationSpeed: 5
+  rotationSpeed: 100
+  isInverted: 0
+  InvertedYMode: {fileID: 0}
 --- !u!81 &1985712450
 AudioListener:
   m_ObjectHideFlags: 0
