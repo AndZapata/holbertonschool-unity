@@ -1,19 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CameraController : MonoBehaviour
 {
   public Transform playerTransform;
   public float rotationSpeed = 100f;
-  public bool isInverted = false;
+  public bool isInverted;
   float mouseX;
   float mouseY;
-  public Toggle InvertedYMode;
 
   void Start()
   {
-    if (InvertedYMode)
+    if (PlayerPrefs.GetInt("Inverted") == 1)
       isInverted = true;
+    else
+      isInverted = false;
   }
 
   void LateUpdate()

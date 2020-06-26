@@ -7011,7 +7011,6 @@ MonoBehaviour:
   playerTransform: {fileID: 463127930}
   rotationSpeed: 100
   isInverted: 0
-  InvertedYMode: {fileID: 0}
 --- !u!1 &215231501
 GameObject:
   m_ObjectHideFlags: 0
