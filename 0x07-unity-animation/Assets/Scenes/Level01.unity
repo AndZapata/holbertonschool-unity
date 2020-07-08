@@ -9696,6 +9696,7 @@ GameObject:
   - component: {fileID: 302537973}
   - component: {fileID: 302537972}
   - component: {fileID: 302537975}
+  - component: {fileID: 302537976}
   m_Layer: 0
   m_Name: CutsceneCamera
   m_TagString: Untagged
@@ -9710,7 +9711,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302537971}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &302537973
 Camera:
   m_ObjectHideFlags: 0
@@ -9786,6 +9787,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &302537976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302537971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c739a58a08ccd4596a7536908505d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &302690855
 GameObject:
   m_ObjectHideFlags: 0
@@ -60107,6 +60120,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimerCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2711943580584513305, guid: 1dffac9e645fe8d4395633340c243fb1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2711943580584513309, guid: 1dffac9e645fe8d4395633340c243fb1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62011,6 +62029,11 @@ PrefabInstance:
       propertyPath: TimerText
       value: 
       objectReference: {fileID: 1686457156}
+    - target: {fileID: 3389411895547877638, guid: 0303267ac8d6c1e48a0aca64c6943463,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5470178938018584371, guid: 0303267ac8d6c1e48a0aca64c6943463,
         type: 3}
       propertyPath: m_LocalPosition.x
