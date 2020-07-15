@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/tsuba/Documents/holberton/holbertonschool-unity/0x06-unity-assets_ui/Builds/Windows/Platformer.exe
+C:/Users/tsuba/Documents/holberton/holbertonschool-unity/0x07-unity-animation/Builds/Windows/Platformer.exe
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/Options.unity
@@ -120,10 +120,11 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 83e769eee07fc231384c812eedbb8224 Assembly-CSharp.dll:.TimerTrigger
 522354bc7c1f9a9f7452c7c8121f98dc Assembly-CSharp.dll:.CameraController
 b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
+dc7f26a5fdbad1ead5be6f5bde155dc7 Assembly-CSharp.dll:.CutsceneController
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 c8c5e65e9fb858572516474d6e2102bc Assembly-CSharp.dll:.PauseMenu
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
-12c549c2099a2735eae2420313dedad8 Assembly-CSharp.dll:.PlayerController
+8047b3f1e56d8f5f1fcba3a8a56bc685 Assembly-CSharp.dll:.PlayerController
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
