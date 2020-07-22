@@ -5,6 +5,9 @@ using UnityEngine.UI;
 public class OptionsMenu : MonoBehaviour
 {
     public Toggle InvertedYMode;
+    public AudioSource myFx;
+    public AudioClip hoverFx;
+    public AudioClip clickFx;
 
     void Start()
     {
@@ -26,5 +29,15 @@ public class OptionsMenu : MonoBehaviour
         else
             PlayerPrefs.SetInt("Inverted", 0);
         Back();
+    }
+
+    public void HoverSound()
+    {
+        myFx.PlayOneShot(hoverFx);
+    }
+
+    public void ClickSound()
+    {
+        myFx.PlayOneShot(clickFx);
     }
 }
