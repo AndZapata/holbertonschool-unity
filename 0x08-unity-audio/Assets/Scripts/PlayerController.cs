@@ -2,6 +2,7 @@
 
 public class PlayerController : MonoBehaviour
 {
+    // Player variables
     public CharacterController controller;
     public float gravity = -9.81f * 2;
     public float jump = 1.8f;
@@ -10,10 +11,15 @@ public class PlayerController : MonoBehaviour
     Transform playerPosition;
     Vector3 vel;
 
+    // Animator variables
     public Animator animator;
     int jumpHash = Animator.StringToHash("Jump");
     int fallingHash = Animator.StringToHash("Falling");
     bool running = false;
+
+    // Audio variables
+    public AudioSource footSteps;
+    public AudioClip grassFootStep;
 
     void Start()
     {
@@ -60,7 +66,18 @@ public class PlayerController : MonoBehaviour
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
         if (direction.magnitude >= 0.1f)
         {
+            // Set animation bool
             running = true;
+
+            // Audio controller
+            if (controller.isGrounded)
+            {
+                footSteps.volume = Random.Range(0.8f, 1);
+                footSteps.pitch = Random.Range(0.8f, 1.1f);
+                footSteps.PlayOneShot(grassFootStep);
+            }
+
+            // Movement controller
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + mainCamera.eulerAngles.y;
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
