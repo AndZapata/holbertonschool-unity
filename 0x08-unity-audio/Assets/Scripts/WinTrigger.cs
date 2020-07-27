@@ -8,6 +8,8 @@ public class WinTrigger : MonoBehaviour
     public GameObject winMenuUI;
     public Text FinalTime;
     public Text timerText;
+    public AudioSource win;
+    public AudioSource cheery;
     void OnTriggerEnter(Collider other)
     {
         if (other.name == "Player")
@@ -23,5 +25,7 @@ public class WinTrigger : MonoBehaviour
         timerUI.SetActive(false);
         winMenuUI.SetActive(true);
         FinalTime.text = timerText.text;
+        cheery.Stop();
+        win.Play();
     }
 }
