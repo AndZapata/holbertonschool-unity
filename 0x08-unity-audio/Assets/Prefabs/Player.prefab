@@ -40,13 +40,13 @@ AudioSource:
   m_GameObject: {fileID: 243709006}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243924277279707536, guid: 412ce6ccb50e67049bc1eb3ad570febe,
+  OutputAudioMixerGroup: {fileID: 243418625821399920, guid: 412ce6ccb50e67049bc1eb3ad570febe,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: bd2312570242cc3448ae0e1a94f1a0ea, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -168,13 +168,13 @@ AudioSource:
   m_GameObject: {fileID: 632040464}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243924277279707536, guid: 412ce6ccb50e67049bc1eb3ad570febe,
+  OutputAudioMixerGroup: {fileID: 243418625821399920, guid: 412ce6ccb50e67049bc1eb3ad570febe,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: a2a54fc3ab9b6704b96ac9e0d7cca5cc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -431,7 +431,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 243924277279707536, guid: 412ce6ccb50e67049bc1eb3ad570febe,
     type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -779,7 +779,8 @@ MonoBehaviour:
   speed: 12
   animator: {fileID: 3359591402943136531}
   footSteps: {fileID: 1004450150}
-  grassFootStep: {fileID: 8300000, guid: bd2312570242cc3448ae0e1a94f1a0ea, type: 3}
+  grassFootStep: {fileID: 8300000, guid: 93373e39b1580964c8a1f691e5ffc55a, type: 3}
+  landingGrassFootStep: {fileID: 243709008}
 --- !u!1001 &3359591402935760499
 PrefabInstance:
   m_ObjectHideFlags: 0

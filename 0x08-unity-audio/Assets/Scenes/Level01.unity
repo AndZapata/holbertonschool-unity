@@ -53794,12 +53794,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfd71611720260346920e9b33e19457a, type: 3}
---- !u!82 &1816794027 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 243709008, guid: 0303267ac8d6c1e48a0aca64c6943463,
-    type: 3}
-  m_PrefabInstance: {fileID: 3359591401860484092}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1817937706 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: cc4d86227d944b4409167976c0a5f2f0,
@@ -63612,47 +63606,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 243709008, guid: 0303267ac8d6c1e48a0aca64c6943463, type: 3}
-      propertyPath: Loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 243709008, guid: 0303267ac8d6c1e48a0aca64c6943463, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 243418625821399920, guid: 412ce6ccb50e67049bc1eb3ad570febe,
-        type: 2}
-    - target: {fileID: 243709008, guid: 0303267ac8d6c1e48a0aca64c6943463, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 632040466, guid: 0303267ac8d6c1e48a0aca64c6943463, type: 3}
-      propertyPath: Loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 632040466, guid: 0303267ac8d6c1e48a0aca64c6943463, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 243418625821399920, guid: 412ce6ccb50e67049bc1eb3ad570febe,
-        type: 2}
-    - target: {fileID: 1004450150, guid: 0303267ac8d6c1e48a0aca64c6943463, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3388832531618324692, guid: 0303267ac8d6c1e48a0aca64c6943463,
         type: 3}
       propertyPath: TimerText
       value: 
       objectReference: {fileID: 1686457156}
-    - target: {fileID: 3389411895547877638, guid: 0303267ac8d6c1e48a0aca64c6943463,
-        type: 3}
-      propertyPath: landingGrassFootStep
-      value: 
-      objectReference: {fileID: 1816794027}
-    - target: {fileID: 3389411895547877638, guid: 0303267ac8d6c1e48a0aca64c6943463,
-        type: 3}
-      propertyPath: grassFootStep
-      value: 
-      objectReference: {fileID: 8300000, guid: 93373e39b1580964c8a1f691e5ffc55a, type: 3}
     - target: {fileID: 5470178938018584371, guid: 0303267ac8d6c1e48a0aca64c6943463,
         type: 3}
       propertyPath: m_LocalPosition.x
