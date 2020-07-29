@@ -103,12 +103,16 @@ public class PlayerController : MonoBehaviour
       if (!landingGrassFootStep.isPlaying && canPlayLanding == true)
         StartCoroutine(PlayLandingSound());
     }
+    if (other.tag == "Birds")
+      FindObjectOfType<AudioManager>().Play("Birds");
+    if (other.tag == "Crickets")
+      FindObjectOfType<AudioManager>().Play("Crickets");
   }
   IEnumerator PlayLandingSound()
   {
     canPlayLanding = false;
     landingGrassFootStep.Play();
-    yield return new WaitForSeconds(0.02f);
+    yield return new WaitForSeconds(0.5f);
     canPlayLanding = true;
   }
 }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -8,6 +9,8 @@ public class OptionsMenu : MonoBehaviour
     public AudioSource myFx;
     public AudioClip hoverFx;
     public AudioClip clickFx;
+
+    public AudioMixerGroup volBGM;
 
     void Start()
     {
@@ -39,5 +42,10 @@ public class OptionsMenu : MonoBehaviour
     public void ClickSound()
     {
         myFx.PlayOneShot(clickFx);
+    }
+
+    public void SetVolumeBGM(float volume)
+    {
+        Debug.Log(volume);
     }
 }

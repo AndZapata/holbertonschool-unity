@@ -633,6 +633,7 @@ MonoBehaviour:
   myFx: {fileID: 2040369815}
   hoverFx: {fileID: 8300000, guid: 8a1db5da6913065498fe507b59cb8e52, type: 3}
   clickFx: {fileID: 8300000, guid: c42a28834789b004396e41a085bb407b, type: 3}
+  volBGM: {fileID: 243121795033635908, guid: 412ce6ccb50e67049bc1eb3ad570febe, type: 2}
 --- !u!1 &505273082
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +722,18 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 365968432}
+        m_MethodName: SetVolumeBGM
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &705425730
 GameObject:
   m_ObjectHideFlags: 0

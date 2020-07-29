@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Splat
+  - Birds
+  - Crickets
   layers:
   - Default
   - TransparentFX
