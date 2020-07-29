@@ -10,7 +10,8 @@ public class OptionsMenu : MonoBehaviour
     public AudioClip hoverFx;
     public AudioClip clickFx;
 
-    public AudioMixerGroup volBGM;
+    public AudioMixer volBGM;
+    public AudioMixer volSFX;
 
     void Start()
     {
@@ -46,6 +47,10 @@ public class OptionsMenu : MonoBehaviour
 
     public void SetVolumeBGM(float volume)
     {
-        Debug.Log(volume);
+        volBGM.SetFloat("volumeBGM", volume);
+    }
+    public void SetVolumeSFX(float volume)
+    {
+        volSFX.SetFloat("volumeSFX", volume);
     }
 }
