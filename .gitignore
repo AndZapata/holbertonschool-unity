@@ -74,3 +74,8 @@ crashlytics-build.properties
 0x08-unity-audio/Temp/UnityTempFile-0dfcc5bcc93875e4ba28f140b7d0c0ba
 0x08-unity-audio/Temp/UnityTempFile-5fd43922f46d2044d8cd004388ab5e03
 0x08-unity-audio/Temp/UnityTempFile-ddd06e06ee1a32046b8acc2b229def48
+*.backup
+0x09-unity_ar_business_card/Temp/*
+0x09-unity_ar_business_card/Library/ArtifactDB-lock
+0x09-unity_ar_business_card/Library/ArtifactDB
+0x09-unity_ar_business_card/Library/PackageCache/*
